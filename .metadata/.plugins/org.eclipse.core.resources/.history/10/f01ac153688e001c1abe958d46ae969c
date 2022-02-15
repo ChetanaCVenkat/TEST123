@@ -1,0 +1,32 @@
+package AutomationPackage;
+
+import org.testng.annotations.Test;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class ChetanaTest {
+	
+static Logger log =Logger.getLogger(ChetanaTest.class);
+
+	@Test
+	public static void login()
+	{
+	
+	System.setProperty("webdriver.gecko.driver","D:\\Driver\\geckodriver.exe");
+	WebDriver driver = new FirefoxDriver();
+	driver.navigate().to("http://demo.guru99.com/test/newtours/");
+	driver.getTitle();
+	System.out.print("che");
+	try {
+		log.info("Chetana First integration"+driver.getTitle());
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	driver.close();
+	
+	}
+
+}

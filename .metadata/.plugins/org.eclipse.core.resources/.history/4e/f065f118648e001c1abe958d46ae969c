@@ -1,0 +1,18 @@
+package AutomationPackage;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class ChetanaTest {
+	
+	@Test
+	public static void login()
+	{
+	
+	System.setProperty("webdriver.gecko.driver","D:\\Driver\\geckodriver.exe");
+	WebDriver driver = new FirefoxDriver();
+	driver.navigate().to("http://demo.guru99.com/test/newtours/");
+	
+	}
+
+}

@@ -1,0 +1,16 @@
+package AutomationPackage;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+public class ChetanaTest {
+	
+	@Test
+	public static void login()
+	{
+	
+	System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");
+	WebDriver driver =new Firefox
+	
+	}
+
+}
